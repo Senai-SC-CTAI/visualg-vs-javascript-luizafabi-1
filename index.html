@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificação de salario</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Verificação de Salário</h1>
+  <form>
+    <label for="salarioAnual">Digite o salário anual do funcionário:</label>
+    <input type="number" id="salarioAnual" name="salarioAnual" required>
+  
+    <label for="pisoSalarial">Digite o piso salarial mensal da categoria:</label>
+    <input type="number" id="pisoSalarial" name="pisoSalarial" required>
+  
+    <input type="submit" value="Verificar">
+  </form>
+  
+  <p id="salarioMensal"></p>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>codigo visualg</title>
+  <style>
+    .code-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #dd5990;
+      border: 1px solid rgb(157, 202, 172);
+      padding: 20px;
+      box-sizing: border-box;
+      font-family: 'Courier New', monospace;
+      line-height: 1.4;
+    }
+
+    .code-container textarea {
+      width: 100%;
+      height: 300px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid rgb(247, 194, 247);
+      resize: vertical;
+    }
+
+    .code-container button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: rgb(162, 235, 160);
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .code-container button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>codigo visualg</h1>
+  
+  <div class="code-container">
+    <textarea id="code" placeholder="Algoritmo Verificação de Salário
+    Var
+       salarioAnual, pisoSalarial, salarioMensal: Real
+    
+    Inicio
+    Escreva(Digite o salário anual do funcionário: )
+       Leia(salarioAnual)
+    
+       Escreva(Digite o piso salarial mensal da categoria: )
+       Leia(pisoSalarial)
+    
+       salarioMensal <- salarioAnual / 12
+    
+       SE (salarioMensal >= pisoSalarial) entao
+          EscrevaL(O funcionário recebe de acordo com o piso salarial.)
+       Senao
+          EscrevaL(O funcionário recebe abaixo do piso salarial.)
+       EscrevaL(Salário mensal do funcionário: , salarioMensal)
+    FimAlgoritmo"
+    "></textarea>
+    <div id="resultado"></div>
+  </div>
+  <script>
+    function executarCodigo() {
+      var codigo = document.getElementById('code').value;
+      var resultado = document.getElementById('resultado');
+      
+      // Limpa o resultado anterior
+      resultado.innerHTML = '';
+      
+      try {
+        eval(codigo);
+      } catch (error) {
+        
+      }
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>foto visualg</title>
+  <style>
+    .image-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #f7bcf7;
+      border: 9px solid rgb(142, 207, 159);
+      padding: 40px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container input[type="text"] {
+      width: 100%;
+      padding: 40px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .image-container button {
+      padding: 20px 40px;
+      background-color: #d34b96;
+      color: rgb(132, 216, 166);
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .image-container button:hover {
+      background-color: #b84f88;
+    }
+  </style>
+</head>
+<body>
+  <h1>foto visualg</h1>
+  
+  <div class="image-container">
+    <input type="text" id="image-url" placeholder="Captura de tela">
+    <button onclick="exibirImagem()">Exibir Imagem</button><br><br>
+    <div id="image-preview"></div>
+  </div>
+  
+  <script>
+    function exibirImagem() {
+      var imageUrl = document.getElementById('image-url').value;
+      var imagePreview = document.getElementById('image-preview');
+      
+      // Limpa o conteúdo anterior
+      imagePreview.innerHTML = '';
+      
+      // Cria o elemento de imagem
+      var image = document.createElement('img');
+      image.src = imageUrl;
+      
+      // Adiciona a imagem ao container
+      imagePreview.appendChild(image);
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>codigo vscod</title>
+  <style>
+    .code-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #dd5990;
+      border: 1px solid rgb(157, 202, 172);
+      padding: 20px;
+      box-sizing: border-box;
+      font-family: 'Courier New', monospace;
+      line-height: 1.4;
+    }
+    .code-container textarea {
+      width: 100%;
+      height: 300px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid rgb(247, 194, 247);
+      resize: vertical;
+    }
+    .code-container button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: rgb(162, 235, 160);
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .code-container button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>codigo vscode</h1>
+  <div class="code-container">
+    <textarea id="code" placeholder="document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+    
+      var salarioAnual = parseFloat(document.getElementById('salarioAnual').value);
+      var pisoSalarial = parseFloat(document.getElementById('pisoSalarial').value);
+      var salarioMensal = salarioAnual / 12;
+    
+      if (salarioMensal >= pisoSalarial) {
+        alert('O funcionário recebe de acordo com o piso salarial.');
+      } else {
+        alert('O funcionário recebe abaixo do piso salarial.');
+      }
+    
+      document.getElementById('salarioMensal').innerHTML = 'Salário mensal do funcionário: ' + salarioMensal.toFixed(2);
+    });
+    ></textarea>
+    <button onclick=executarCodigo()>Executar</button>
+    <div id=resultado"></div>
+  </div>
+  
+  <script>
+    function executarCodigo() {
+      var codigo = document.getElementById('code').value;
+      var resultado = document.getElementById('resultado');
+      
+      // Limpa o resultado anterior
+      resultado.innerHTML = '';
+      
+      try {
+        eval(codigo);
+      } catch (error) {
+        
+      }
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>foto visualg</title>
+  <style>
+    .image-container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #f7bcf7;
+      border: 1px solid rgb(142, 207, 159);
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(197, 76, 212, 0.1);
+    }
+
+    .image-container input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .image-container button {
+      padding: 10px 20px;
+      background-color: #d67fce;
+      color: rgb(132, 216, 166);
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .image-container button:hover {
+      background-color: #b84f88;
+    }
+  </style>
+</head>
+<body>
+  <h1>foto vscode</h1>
+  
+  <div class="image-container">
+    <input type="text" id="image-url" placeholder="Cole a URL da imagem aqui">
+    <button onclick="exibirImagem()">Exibir Imagem</button>
+    <div id="image-preview"></div>
+  </div>
+  
+  <script>
+    function exibirImagem() {
+      var imageUrl = document.getElementById('image-url').value;
+      var imagePreview = document.getElementById('image-preview');
+      
+      // Limpa o conteúdo anterior
+      imagePreview.innerHTML = '';
+      
+      // Cria o elemento de imagem
+      var image = document.createElement('img');
+      image.src = imageUrl;
+      
+      // Adiciona a imagem ao container
+      imagePreview.appendChild(image);
+    }
+  </script>
+</body>
+</html>
